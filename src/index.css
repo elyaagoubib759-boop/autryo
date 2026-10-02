@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #e7edf7;
+  background: #071018;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg: #071018;
+  --bg-soft: #101b29;
+  --panel: rgba(15, 24, 35, 0.8);
+  --panel-strong: #101b29;
+  --card: #101a25;
+  --card-alt: #0d1722;
+  --text: #ebf3ff;
+  --text-muted: #a8b5c5;
+  --text-soft: #dfeaf8;
+  --border: rgba(131, 170, 220, 0.2);
+  --primary: #31a7ff;
+  --primary-strong: #1494eb;
+  --primary-soft: rgba(49, 167, 255, 0.15);
+  --white: #ffffff;
+  --shadow: 0 28px 60px rgba(3, 8, 16, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(49, 167, 255, 0.12), transparent 35%),
+    linear-gradient(180deg, #071018 0%, #0b1220 100%);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.page-shell {
+  display: block;
+}
+
+[dir='rtl'] {
+  text-align: right;
+}
+
+[dir='rtl'] body,
+[dir='rtl'] .main-nav,
+[dir='rtl'] .hero-copy,
+[dir='rtl'] .contact-form,
+[dir='rtl'] .contact-sidebar,
+[dir='rtl'] .check-item,
+[dir='rtl'] .feature-panel li,
+[dir='rtl'] .footer-list,
+[dir='rtl'] .garage-location,
+[dir='rtl'] .toolbar-field,
+[dir='rtl'] .nav-wrap,
+[dir='rtl'] .hero-meta,
+[dir='rtl'] .hero-actions,
+[dir='rtl'] .final-actions {
+  direction: rtl;
+}
+
+[dir='rtl'] .brand,
+[dir='rtl'] .toolbar-field,
+[dir='rtl'] .garage-actions,
+[dir='rtl'] .social-links,
+[dir='rtl'] .hero-meta span,
+[dir='rtl'] .check-item,
+[dir='rtl'] .feature-panel li,
+[dir='rtl'] .footer-bottom,
+[dir='rtl'] .nav-wrap {
+  flex-direction: row-reverse;
+}
+
+[dir='rtl'] textarea,
+[dir='rtl'] select,
+[dir='rtl'] input {
+  text-align: right;
+}
